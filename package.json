@@ -1,0 +1,29 @@
+{
+  "name": "moderneer",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm -w apps/site run dev",
+    "build": "npm -w apps/site run build && node scripts/generate-sitemap.ts",
+    "preview": "npm -w apps/site run preview",
+    "typecheck": "npm -w apps/site run typecheck",
+    "lint": "eslint . --ext .ts,.tsx,.cjs,.mdx",
+    "format": "prettier --write .",
+    "test": "npm -w apps/site run test",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5",
+    "tsx": "^4.19.1"
+  },
+  "packageManager": "npm@10.8.1"
+}

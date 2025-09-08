@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mod/config/*": ["packages/config/*"],
+      "@mod/ui": ["packages/ui/index.ts"],
+      "@mod/ui/*": ["packages/ui/*"]
+    },
+    "types": ["vite/client"]
+  }
+}

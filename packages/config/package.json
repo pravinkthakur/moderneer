@@ -1,0 +1,7 @@
+{
+  "name": "@mod/config",
+  "version": "1.0.0",
+  "main": "tokens.ts",
+  "type": "module",
+  "private": true
+}
